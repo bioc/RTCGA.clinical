@@ -1,5 +1,6 @@
 ---
 title: "Using `RTCGA` package to download clinical data that are included in `RTCGA.clinical` package"
+subtitle: "Date of datasets release: 2015-08-21"
 author: "Marcin Kosiński"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
