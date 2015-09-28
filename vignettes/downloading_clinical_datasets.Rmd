@@ -49,7 +49,7 @@ library(RTCGA)
 checkTCGA('Dates')
 ```
 
-Version 1.0 of `RTCGA.clinical` package contains clinical datasets from `2015-06-01`.
+Version 1.0 of `RTCGA.clinical` package contains clinical datasets from `2015-08-21`.
 There were downloaded as follows (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
 
 ## Available cohorts
@@ -66,7 +66,7 @@ For all cohorts the following code downloads the clinical data.
 ## Downloading tarred files
 ```{r, eval=FALSE}
 #dir.create( "data2" )
-releaseDate <- "2015-06-01"
+releaseDate <- "2015-08-21"
 downloadTCGA( cancerTypes = cohorts, destDir = "data2", date = releaseDate )
 ```
 
@@ -117,6 +117,17 @@ sapply( cohorts, function(element){
 grep( "clinical", ls(), value = TRUE) %>%
    cat( sep="," ) #can one to id better? as from use_data documentation:
    # ...	Unquoted names of existing objects to save
-   devtools::use_data(ACC.clinical,BLCA.clinical,BRCA.clinical,CESC.clinical,CHOL.clinical,COAD.clinical,COADREAD.clinical,DLBC.clinical,ESCA.clinical,FPPP.clinical,GBM.clinical,GBMLGG.clinical,HNSC.clinical,KICH.clinical,KIPAN.clinical,KIRC.clinical,KIRP.clinical,LAML.clinical,LGG.clinical,LIHC.clinical,LUAD.clinical,LUSC.clinical,MESO.clinical,OV.clinical,PAAD.clinical,PCPG.clinical,READ.clinical,SKCM.clinical,STAD.clinical,STES.clinical,TGCT.clinical,THCA.clinical,THYM.clinical,UCEC.clinical,UCS.clinical,UVM.clinical, overwrite = TRUE)
+   devtools::use_data(ACC.clinical,BLCA.clinical,BRCA.clinical,
+                      CESC.clinical,CHOL.clinical,COAD.clinical,
+                      COADREAD.clinical,DLBC.clinical,ESCA.clinical,
+                      FPPP.clinical,GBM.clinical,GBMLGG.clinical,
+                      HNSC.clinical,KICH.clinical,KIPAN.clinical,
+                      KIRC.clinical,KIRP.clinical,LAML.clinical,
+                      LGG.clinical,LIHC.clinical,LUAD.clinical,
+                      LUSC.clinical,MESO.clinical,OV.clinical,
+                      PAAD.clinical,PCPG.clinical,READ.clinical,
+                      SKCM.clinical,STAD.clinical,STES.clinical,
+                      TGCT.clinical,THCA.clinical,THYM.clinical,
+                      UCEC.clinical,UCS.clinical,UVM.clinical, overwrite = TRUE)
 ```
 
