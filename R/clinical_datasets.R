@@ -7,6 +7,13 @@
 #' 
 #' @details \code{browseVignettes("RTCGA")}
 #' 
+#' @examples
+#' 
+#' \dontrun{
+#' browseVignettes("RTCGA")
+#' }
+#'
+#' 
 #' @return Data frames with clinical data.
 #' 
 #' @import RTCGA
