@@ -17,7 +17,6 @@
 #' @return Data frames with clinical data.
 #' 
 #' @import RTCGA
-#' @import knitr
 #' @format NULL
 #' @source \url{http://gdac.broadinstitute.org/}
 #' 
