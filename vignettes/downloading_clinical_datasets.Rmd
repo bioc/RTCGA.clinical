@@ -129,6 +129,7 @@ grep( "clinical", ls(), value = TRUE) %>%
                       PAAD.clinical,PCPG.clinical,READ.clinical,
                       SKCM.clinical,STAD.clinical,STES.clinical,
                       TGCT.clinical,THCA.clinical,THYM.clinical,
-                      UCEC.clinical,UCS.clinical,UVM.clinical, overwrite = TRUE)
+                      UCEC.clinical,UCS.clinical,UVM.clinical, overwrite = TRUE,
+   									 compress = "xz")
 ```
 
